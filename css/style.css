@@ -12,9 +12,6 @@
     clear: both;
 }
 
-body{
-    background-color: pink;
-}
 
 .container{
     max-width: 1600px;
@@ -36,6 +33,19 @@ body{
     color: white;
 }
 
+.bottone:active{
+    box-shadow: inset 10px 10px 20px -10px rgba(0,0,0,0.75);
+}
+.bottone.btnBlack:active{
+    box-shadow: inset 10px 10px 13px -4px rgba(0,0,0,1);
+}
+
+.bottone:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 22px -10px rgba(0,0,0,0.75);
+    transition: 0.2s;
+}
+
 
 /* Header */
 header{
@@ -45,6 +55,7 @@ header{
     padding: 10px 0px;
     position: fixed;
     z-index: 10;
+    text-align: center;
 }
 
 header nav{
@@ -52,7 +63,6 @@ header nav{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     font-size: 12pt;
 }
 
