@@ -18,17 +18,33 @@ body{
 .container{
     max-width: 1600px;
     margin: 0 auto;
-    height: 100%;
     font-family: 'Roboto', sans-serif;
 }
+
+/* Buttons */
+.bottone{
+    margin: 0px 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 200px;
+
+    font-size: 12pt;
+    font-weight: 500;
+}
+.btnBlack{
+    background-color: #333;
+    color: white;
+}
+
 
 /* Header */
 header{
     width: 100%;
-    min-height: 60px;
-    background-color: #3161e0;
+    height: 60px;
+    background-color: #255EE9;
     padding: 10px 0px;
-    position: relative;
+    position: fixed;
+    z-index: 10;
 }
 
 header nav{
@@ -41,12 +57,12 @@ header nav{
 }
 
 header img{
-    height: 100%;
+    height: 40px;
     float: left;
-    transform: translateY(4px);
 }
-button{
+header button{
     float: right;
+    margin-right: 0px;
 }
 
 header nav li{display: inline-block;}
@@ -58,4 +74,39 @@ header nav li a{
 
 header nav li a:hover{
     border-bottom: 4px solid #1f3e8f;
+}
+
+/* HERO Section */
+.hero{
+    padding-top: 60px;
+    height: 650px;
+    position: relative;
+
+    background-image: url(../img/jumbo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: center;
+    color: white;
+}
+
+.hero .container{
+    position: absolute;
+    max-width: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero h1{
+    font-weight: 700;
+    font-size: 35pt;
+    margin-bottom: 70px;
+}
+.hero p{
+    font-weight: 400;
+    font-size: 14pt;
+    line-height: 1.7em;
+
+    margin-bottom: 25px;
 }
