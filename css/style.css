@@ -12,6 +12,8 @@
     clear: both;
 }
 
+.left{float: left;}
+.right{float: right;}
 
 .container{
     max-width: 1600px;
@@ -119,4 +121,35 @@ header nav li a:hover{
     line-height: 1.7em;
 
     margin-bottom: 25px;
+}
+
+/* main */
+main section{
+    padding: 60px;
+}
+
+main section:nth-child(even){
+    background-color: #f0f0f0;
+}
+
+main .container{
+    max-width: 1300px;
+}
+
+.t-box, .t-img{
+    width: 50%;
+}
+
+.t-box{
+    padding: 35px 10% 0px 10%;
+}
+
+.t-box h2{
+    font-size: 30pt;
+    font-weight: 700;
+}
+
+.t-box p{
+    font-size: 13pt;
+    font-weight: 400;
 }
