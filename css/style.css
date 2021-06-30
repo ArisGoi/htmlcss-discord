@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 } 
 
 .clearfix::after {
@@ -18,7 +19,6 @@ body{
 .container{
     max-width: 1600px;
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
 }
 
 /* Buttons */
